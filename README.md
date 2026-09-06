@@ -1,33 +1,49 @@
 # Yoru para Windows
 
-Anime e séries, ao teu ritmo. O Yoru reúne descoberta, biblioteca, episódios e reprodução numa interface local.
+[**Descarregar Yoru para Windows**](https://github.com/afonsohbamorim/yoru-releases/releases/latest/download/Yoru-Setup-0.6.1.exe)
 
-Este repositório é o canal de instaladores e atualizações. A versão 0.6.0 está em revisão privada; ainda não existe uma release pública.
+Anime e séries, do teu PC à TV.
 
-## Instalação
+## No PC Windows
 
-1. Descarrega `Yoru-Setup-0.6.0.exe` na release aprovada e abre o ficheiro no Windows 10/11 de 64 bits.
-2. Escolhe pastas vazias e separadas para a aplicação e os teus dados.
-3. Abre o atalho Yoru e segue a preparação inicial. Cria a tua conta local e liga as tuas próprias contas, se quiseres.
+1. Descarrega **Yoru-Setup-0.6.1.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases/latest).
+2. Abre e carrega em **Instalar**. As pastas sugeridas servem; podes alterá-las. A primeira abertura precisa de Internet e prepara automaticamente os leitores e serviços.
+3. O Yoru abre no browser. Escolhe onde guardar os vídeos e cria o perfil de reprodução. Liga o AniList se quiseres trazer a tua lista.
 
-O instalador inclui Jellyfin/FFmpeg, MPV, MPC-HC, qBittorrent e o runtime necessário. Não precisas de instalar codecs, Node ou players à parte. Não inclui vídeos, contas ou bibliotecas de outra pessoa. Os dados ficam na pasta que escolheste.
+O ícone Yoru junto ao relógio indica que o serviço está aberto. Podes abrir a interface, escolher **Iniciar com Windows** ou **Sair**. Fechar a página do browser mantém o serviço aberto.
 
-A bandeja permite abrir o Yoru, ativar o início com Windows ou encerrar os serviços desta instalação. Iniciar com Windows é opcional. A obtenção automática de episódios começa desativada.
+Não precisas de instalar Node, codecs, MPV, MPC-HC, Jellyfin ou qBittorrent à mão. Cada pessoa tem as suas próprias contas e ficheiros. O programa fica na pasta da aplicação; os vídeos podem ficar noutro disco escolhido no Yoru.
 
-## Atualizações
+## Na TV
 
-O Yoru verifica novas versões automaticamente. Descarregar e instalar exige confirmação na aplicação; uma sessão de reprodução impede a atualização. O atualizador verifica a assinatura e os ficheiros e recupera a versão anterior se a nova falhar na validação.
+No PC, abre **Definições → Dispositivos → Preparar ligação à TV** e aceita o pedido do Windows. Instala a app **Jellyfin** na loja da TV. Android/Google TV e LG webOS têm clientes nativos; a disponibilidade depende do modelo e da loja.
 
-Nesta primeira versão, o atualizador cobre o Yoru, o seu runtime e os players. Jellyfin e qBittorrent permanecem na versão base da instalação. O feed só funciona depois de existir uma release publicada e acessível.
+Dentro da app Jellyfin, introduz o endereço que o Yoru mostra. É a ligação inicial ao servidor do PC; a app guarda-o. No login, escolhe **Quick Connect** e escreve no Yoru o código apresentado na TV. Também podes entrar com o perfil de reprodução criado no PC.
 
-## Ver na TV
+Depois, abres a app da TV e escolhes os vídeos. O PC tem de estar ligado, com sessão Windows iniciada e o Yoru aberto. Ambos os dispositivos têm de estar na mesma rede de casa. Se o router mudar o endereço do PC, atualiza o servidor guardado na TV.
 
-O PC funciona como servidor e tem de estar ligado durante a reprodução. O primeiro percurso usa a aplicação Jellyfin da TV, ligada ao servidor pela rede de casa. Existem [clientes oficiais para Android TV/Fire TV e LG webOS](https://jellyfin.org/downloads/clients/all/); a compatibilidade depende do modelo. A validação numa TV física ainda está pendente.
+## No MacBook
 
-## Sobre o beta
+Não instales o servidor no Mac. No PC, abre **Definições → Dispositivos**, ativa o acesso pelo browser e gera um código de emparelhamento. No Safari do Mac, abre o endereço **Yoru** apresentado nessa secção e introduz o código. Usa **Disponíveis** para ver a mesma coleção e continuar os episódios.
 
-A obtenção de todos os episódios confirma primeiro quais foram emitidos, as duplicações e o espaço estimado. A aplicação procura depois uma edição adequada por episódio, respeitando os limites de armazenamento e simultaneidade.
+O endereço Yoru é diferente do endereço Jellyfin da TV. `localhost` no Mac aponta para o Mac, por isso deves usar o endereço do PC. Chrome não é obrigatório. A reprodução e eventual conversão dependem do formato do vídeo e do Mac.
 
-O AniList pode ficar indisponível: a biblioteca e os detalhes guardados continuam visíveis, mas dados antigos não autorizam novos episódios. O envio automático do progresso do player para AniList e a obtenção de séries ainda não estão incluídos.
+Depois de ligado, o dispositivo fica autorizado até revogares o acesso. Não precisas de renovar semanalmente. Se apagares os dados do browser ou usares navegação privada, poderás precisar de o ligar novamente. Os dispositivos autorizados numa versão antiga têm a opção **Manter autorizado** no PC.
 
-As atualizações têm assinatura Ed25519. Este instalador beta ainda não tem assinatura de editor Windows (Authenticode). As licenças e os avisos dos componentes incluídos acompanham o pacote.
+## Obter episódios e atualizar
+
+Na ficha de um anime, escolhe o áudio e o que queres guardar. **Descarregar episódios disponíveis** permite rever todos os emitidos ou os não vistos, confirmar o espaço e iniciar o lote. Os episódios só aparecem em **Disponíveis** depois de concluídos e verificados. Um lote pode esperar por uma edição que cumpra o perfil; a espera tem um motivo visível.
+
+Nas instalações novas, a aquisição automática de planos começa desligada. Ativa-a em **Episódios** para acompanhar a fila. A qualidade, o espaço e a identificação do episódio são sempre verificados antes de iniciar uma transferência.
+
+Podes escolher entre 1 e 16 transferências simultâneas. Um limite maior permite mais transferências, mas não cria versões compatíveis quando elas não existem.
+
+Em **Definições → Atualizações**, o Yoru avisa quando existe uma versão e trata do download e instalação após a tua escolha. Os leitores e serviços da primeira instalação mantêm as versões fixadas; esta versão ainda não atualiza esses componentes automaticamente.
+
+## Desinstalar
+
+O Yoru aparece nas **Aplicações instaladas** do Windows e no Painel de Controlo. Por omissão, a desinstalação preserva dados e vídeos. Podes escolher apagar os dados do Yoru e, separadamente, os vídeos geridos na pasta de dados. Vídeos externos ou desconhecidos são preservados. A janela mostra o âmbito antes de confirmar.
+
+Este é um beta sem certificado Authenticode; o Windows pode mostrar um aviso de editor desconhecido. As atualizações são verificadas com assinatura Ed25519. A TV física e o Safari do destinatário precisam do primeiro teste no respetivo dispositivo.
+
+Referências: [clientes Jellyfin](https://jellyfin.org/downloads/clients/all/), [Quick Connect](https://jellyfin.org/docs/general/server/quick-connect/), [compatibilidade de formatos](https://jellyfin.org/docs/general/clients/codec-support/).
