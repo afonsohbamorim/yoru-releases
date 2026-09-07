@@ -4,11 +4,13 @@
 
 ## No PC Windows
 
-1. Descarrega **Yoru-Setup-0.6.6.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases).
+1. Descarrega **Yoru-Setup-0.6.7.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases).
 2. Abre e carrega em **Instalar**. As pastas sugeridas servem; podes alterá-las. A primeira abertura precisa de Internet e prepara automaticamente os leitores e serviços.
 3. O Yoru abre no browser. Escolhe onde guardar os vídeos e cria o perfil de reprodução. Liga o AniList se quiseres trazer a tua lista.
 
 O ícone Yoru junto ao relógio indica que o serviço está aberto. Podes abrir a interface, escolher **Iniciar com Windows** ou **Sair**. Fechar a página do browser mantém o serviço aberto.
+
+O botão de sol/lua no canto superior direito alterna o tema claro e escuro. A escolha fica guardada nesse browser.
 
 Não precisas de instalar Node, codecs, MPV, MPC-HC, Jellyfin ou qBittorrent à mão. Cada pessoa tem as suas próprias contas e ficheiros. O programa fica na pasta da aplicação; os vídeos podem ficar noutro disco escolhido no Yoru.
 
@@ -38,23 +40,25 @@ Na ficha de um anime, escolhe o áudio e o que queres guardar. **Descarregar epi
 
 Nas instalações novas, a aquisição automática de planos começa desligada. Ativa-a em **Episódios** para acompanhar a fila. A qualidade, o espaço e a identificação do episódio são sempre verificados antes de iniciar uma transferência.
 
-As transferências ficam agrupadas por anime em **Em curso**, **Pausas e problemas** e **Histórico**. Abre um grupo para ver os episódios. Os torrents concluídos podem continuar a partilhar no qBittorrent; os novos downloads ficam na categoria **Yoru** quando esta não altera os caminhos ou a partilha.
+As transferências ficam agrupadas por anime em **Em curso**, **Pausas e problemas** e **Histórico**. Abre um grupo para ver os episódios. Depois de confirmar o vídeo concluído, o Yoru retira o seu torrent do qBittorrent e preserva o ficheiro na coleção. Torrents pessoais e transferências incompletas não são removidos.
 
 Podes escolher entre 1 e 16 transferências simultâneas. Um limite maior permite mais transferências, mas não cria versões compatíveis quando elas não existem.
 
 Se apagares um vídeo num disco ligado, o Yoru volta a reconhecer que falta. Se mudares o áudio de um anime, verifica as faixas declaradas dos ficheiros existentes e pode procurar uma edição adequada à nova preferência. Não apaga a edição anterior. Um idioma não declarado continua a aparecer como desconhecido e não conta como DUB inglês confirmado.
 
-## Pesquisa e legendas opcionais
+## Pesquisa, progresso e legendas
 
-A pesquisa nativa continua disponível sem configuração adicional. Em **Definições → Avançado → Os módulos do teu Yoru**, podes preparar e ligar **Prowlarr** e **Sonarr**, e depois escolher **Preparar pesquisa**. O Yoru obtém as versões oficiais e configura os dois serviços neste PC.
+A pesquisa nativa funciona sem configuração adicional. O Yoru prepara Sonarr e Prowlarr em segundo plano quando o serviço de downloads está pronto. Não precisas de entrar nos painéis dessas aplicações. Em **Definições → Avançado → Pesquisa de episódios**, podes consultar o estado e abrir detalhes se houver um problema.
 
-Para usar essa pesquisa num anime, escolhe-o, confirma o título correspondente e revê a numeração dos episódios. **Usar pesquisa Yoru** repõe a pesquisa nativa desse título; as transferências e os ficheiros existentes são preservados. Esta opção ainda não inclui packs de temporadas nem aquisição de séries TV.
+Para usar a pesquisa Sonarr num título cuja identidade não pôde ser confirmada automaticamente, abre **Rever a identificação de um anime**, procura o título e revê a numeração dos episódios. A pesquisa nativa continua disponível sem esta associação. Packs de temporadas e aquisição geral de séries TV ainda não estão incluídos nesta ponte.
+
+Com AniList ligado, o progresso visto no perfil Jellyfin preparado nesta instalação é sincronizado automaticamente com o Yoru e o AniList. O PC e o Yoru têm de estar ligados. São contados episódios consecutivos confirmados; notas, estados e progresso superior são preservados. Outras alterações manuais à lista continuam disponíveis para revisão na página da conta.
 
 No leitor do browser, as faixas ASS compatíveis oferecem **Estilo original ASS**, que preserva a apresentação da edição, e **Texto personalizável**, para escolher a tua apresentação. Se a renderização original falhar, o leitor regressa ao texto. Na televisão, os controlos de legendas são os da app Jellyfin.
 
 ## Atualizações
 
-**Se tens 0.6.1–0.6.5:** descarrega **Yoru-Setup-0.6.6.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases), abre-o e escolhe atualizar. Esta passagem precisa do instalador novo para renovar o sistema de arranque e recuperação. Não desinstales: as tuas contas, definições e vídeos ficam guardados.
+**Se tens 0.6.1–0.6.5:** descarrega **Yoru-Setup-0.6.7.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases), abre-o e escolhe atualizar. Esta passagem precisa do instalador novo para renovar o sistema de arranque e recuperação. Não desinstales: as tuas contas, definições e vídeos ficam guardados.
 
 Se tinhas escolhido outra pasta para o programa, usa **Alterar pastas** e seleciona essa mesma pasta da instalação anterior.
 
