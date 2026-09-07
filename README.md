@@ -2,9 +2,11 @@
 
 [Descarregar Yoru para Windows](https://github.com/afonsohbamorim/yoru-releases/releases)
 
+Anime e séries, do teu PC à TV.
+
 ## No PC Windows
 
-1. Descarrega **Yoru-Setup-0.6.7.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases).
+1. Descarrega **Yoru-Setup-0.6.8.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases).
 2. Abre e carrega em **Instalar**. As pastas sugeridas servem; podes alterá-las. A primeira abertura precisa de Internet e prepara automaticamente os leitores e serviços.
 3. O Yoru abre no browser. Escolhe onde guardar os vídeos e cria o perfil de reprodução. Liga o AniList se quiseres trazer a tua lista.
 
@@ -58,7 +60,7 @@ No leitor do browser, as faixas ASS compatíveis oferecem **Estilo original ASS*
 
 ## Atualizações
 
-**Se tens 0.6.1–0.6.5:** descarrega **Yoru-Setup-0.6.7.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases), abre-o e escolhe atualizar. Esta passagem precisa do instalador novo para renovar o sistema de arranque e recuperação. Não desinstales: as tuas contas, definições e vídeos ficam guardados.
+**Se tens 0.6.1–0.6.5:** descarrega **Yoru-Setup-0.6.8.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases), abre-o e escolhe atualizar. Esta passagem precisa do instalador novo para renovar o sistema de arranque e recuperação. Não desinstales: as tuas contas, definições e vídeos ficam guardados.
 
 Se tinhas escolhido outra pasta para o programa, usa **Alterar pastas** e seleciona essa mesma pasta da instalação anterior.
 
