@@ -1,18 +1,18 @@
 # Yoru para Windows
 
-[**Descarregar Yoru para Windows**](https://github.com/afonsohbamorim/yoru-releases/releases)
-
-Anime e séries, do teu PC à TV.
+[Descarregar Yoru para Windows](https://github.com/afonsohbamorim/yoru-releases/releases)
 
 ## No PC Windows
 
-1. Descarrega o ficheiro **Yoru-Setup-…exe** da versão mais recente na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases/latest).
+1. Descarrega **Yoru-Setup-0.6.6.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases).
 2. Abre e carrega em **Instalar**. As pastas sugeridas servem; podes alterá-las. A primeira abertura precisa de Internet e prepara automaticamente os leitores e serviços.
 3. O Yoru abre no browser. Escolhe onde guardar os vídeos e cria o perfil de reprodução. Liga o AniList se quiseres trazer a tua lista.
 
 O ícone Yoru junto ao relógio indica que o serviço está aberto. Podes abrir a interface, escolher **Iniciar com Windows** ou **Sair**. Fechar a página do browser mantém o serviço aberto.
 
 Não precisas de instalar Node, codecs, MPV, MPC-HC, Jellyfin ou qBittorrent à mão. Cada pessoa tem as suas próprias contas e ficheiros. O programa fica na pasta da aplicação; os vídeos podem ficar noutro disco escolhido no Yoru.
+
+Na escolha do armazenamento, seleciona o primeiro disco e usa **Adicionar disco** para acrescentar os restantes discos detetados. As setas definem a ordem de tentativa; cada destino tem a sua própria pasta. Usa **Escolher pasta** para navegar nas pastas do PC; o caminho manual fica nas opções avançadas. Guardar esta ordem não move nem apaga vídeos existentes.
 
 ## Na TV
 
@@ -21,6 +21,8 @@ No PC, abre **Definições → Dispositivos → Preparar ligação à TV** e ace
 Dentro da app Jellyfin, introduz o endereço que o Yoru mostra. É a ligação inicial ao servidor do PC; a app guarda-o. No login, escolhe **Quick Connect** e escreve no Yoru o código apresentado na TV. Também podes entrar com o perfil de reprodução criado no PC.
 
 Depois, abres a app da TV e escolhes os vídeos. O PC tem de estar ligado, com sessão Windows iniciada e o Yoru aberto. Ambos os dispositivos têm de estar na mesma rede de casa. Se o router mudar o endereço do PC, atualiza o servidor guardado na TV.
+
+Em **Definições → Dispositivos → Verificar biblioteca e imagem**, confirma as pastas ligadas e os vídeos indexados. Se houver pastas em falta, usa **Ligar pastas em falta e atualizar**. Durante um episódio na TV, verifica novamente para saber se o servidor entrega vídeo original ou convertido.
 
 ## No MacBook
 
@@ -36,7 +38,25 @@ Na ficha de um anime, escolhe o áudio e o que queres guardar. **Descarregar epi
 
 Nas instalações novas, a aquisição automática de planos começa desligada. Ativa-a em **Episódios** para acompanhar a fila. A qualidade, o espaço e a identificação do episódio são sempre verificados antes de iniciar uma transferência.
 
+As transferências ficam agrupadas por anime em **Em curso**, **Pausas e problemas** e **Histórico**. Abre um grupo para ver os episódios. Os torrents concluídos podem continuar a partilhar no qBittorrent; os novos downloads ficam na categoria **Yoru** quando esta não altera os caminhos ou a partilha.
+
 Podes escolher entre 1 e 16 transferências simultâneas. Um limite maior permite mais transferências, mas não cria versões compatíveis quando elas não existem.
+
+Se apagares um vídeo num disco ligado, o Yoru volta a reconhecer que falta. Se mudares o áudio de um anime, verifica as faixas declaradas dos ficheiros existentes e pode procurar uma edição adequada à nova preferência. Não apaga a edição anterior. Um idioma não declarado continua a aparecer como desconhecido e não conta como DUB inglês confirmado.
+
+## Pesquisa e legendas opcionais
+
+A pesquisa nativa continua disponível sem configuração adicional. Em **Definições → Avançado → Os módulos do teu Yoru**, podes preparar e ligar **Prowlarr** e **Sonarr**, e depois escolher **Preparar pesquisa**. O Yoru obtém as versões oficiais e configura os dois serviços neste PC.
+
+Para usar essa pesquisa num anime, escolhe-o, confirma o título correspondente e revê a numeração dos episódios. **Usar pesquisa Yoru** repõe a pesquisa nativa desse título; as transferências e os ficheiros existentes são preservados. Esta opção ainda não inclui packs de temporadas nem aquisição de séries TV.
+
+No leitor do browser, as faixas ASS compatíveis oferecem **Estilo original ASS**, que preserva a apresentação da edição, e **Texto personalizável**, para escolher a tua apresentação. Se a renderização original falhar, o leitor regressa ao texto. Na televisão, os controlos de legendas são os da app Jellyfin.
+
+## Atualizações
+
+**Se tens 0.6.1–0.6.5:** descarrega **Yoru-Setup-0.6.6.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases), abre-o e escolhe atualizar. Esta passagem precisa do instalador novo para renovar o sistema de arranque e recuperação. Não desinstales: as tuas contas, definições e vídeos ficam guardados.
+
+Se tinhas escolhido outra pasta para o programa, usa **Alterar pastas** e seleciona essa mesma pasta da instalação anterior.
 
 Em **Definições → Atualizações**, o Yoru avisa quando existe uma versão e trata do download e instalação após a tua escolha. Os leitores e serviços da primeira instalação mantêm as versões fixadas; esta versão ainda não atualiza esses componentes automaticamente.
 
