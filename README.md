@@ -1,12 +1,8 @@
-# Yoru para Windows
-
-[Descarregar Yoru para Windows](https://github.com/afonsohbamorim/yoru-releases/releases)
-
-Anime e séries, do teu PC à TV.
+# Começar com o Yoru
 
 ## No PC Windows
 
-1. Descarrega **Yoru-Setup-0.6.8.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases).
+1. Abre **Yoru-Setup-1.0.0.exe** recebido para este teste. A disponibilidade na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases) depende de a versão já ter sido publicada.
 2. Abre e carrega em **Instalar**. As pastas sugeridas servem; podes alterá-las. A primeira abertura precisa de Internet e prepara automaticamente os leitores e serviços.
 3. O Yoru abre no browser. Escolhe onde guardar os vídeos e cria o perfil de reprodução. Liga o AniList se quiseres trazer a tua lista.
 
@@ -40,7 +36,7 @@ Depois de ligado, o dispositivo fica autorizado até revogares o acesso. Não pr
 
 Na ficha de um anime, escolhe o áudio e o que queres guardar. **Descarregar episódios disponíveis** permite rever todos os emitidos ou os não vistos, confirmar o espaço e iniciar o lote. Os episódios só aparecem em **Disponíveis** depois de concluídos e verificados. Um lote pode esperar por uma edição que cumpra o perfil; a espera tem um motivo visível.
 
-Nas instalações novas, a aquisição automática de planos começa desligada. Ativa-a em **Episódios** para acompanhar a fila. A qualidade, o espaço e a identificação do episódio são sempre verificados antes de iniciar uma transferência.
+Nas instalações novas, a aquisição automática é ativada quando existem títulos acompanhados. Confirma o estado em **Episódios**, onde a podes pausar. Uma escolha anterior de pausa é preservada. A qualidade, o espaço e a identificação do episódio são sempre verificados antes de iniciar uma transferência.
 
 As transferências ficam agrupadas por anime em **Em curso**, **Pausas e problemas** e **Histórico**. Abre um grupo para ver os episódios. Depois de confirmar o vídeo concluído, o Yoru retira o seu torrent do qBittorrent e preserva o ficheiro na coleção. Torrents pessoais e transferências incompletas não são removidos.
 
@@ -60,7 +56,7 @@ No leitor do browser, as faixas ASS compatíveis oferecem **Estilo original ASS*
 
 ## Atualizações
 
-**Se tens 0.6.1–0.6.5:** descarrega **Yoru-Setup-0.6.8.exe** na [página de downloads](https://github.com/afonsohbamorim/yoru-releases/releases), abre-o e escolhe atualizar. Esta passagem precisa do instalador novo para renovar o sistema de arranque e recuperação. Não desinstales: as tuas contas, definições e vídeos ficam guardados.
+**Se tens uma versão anterior a 1.0.0:** abre o novo **Yoru-Setup-1.0.0.exe** e escolhe atualizar. Esta passagem precisa do instalador novo para renovar o sistema de arranque e recuperação. Não desinstales: as tuas contas, definições e vídeos ficam guardados.
 
 Se tinhas escolhido outra pasta para o programa, usa **Alterar pastas** e seleciona essa mesma pasta da instalação anterior.
 
@@ -70,6 +66,6 @@ Em **Definições → Atualizações**, o Yoru avisa quando existe uma versão e
 
 O Yoru aparece nas **Aplicações instaladas** do Windows e no Painel de Controlo. Por omissão, a desinstalação preserva dados e vídeos. Podes escolher apagar os dados do Yoru e, separadamente, os vídeos geridos na pasta de dados. Vídeos externos ou desconhecidos são preservados. A janela mostra o âmbito antes de confirmar.
 
-Este é um beta sem certificado Authenticode; o Windows pode mostrar um aviso de editor desconhecido. As atualizações são verificadas com assinatura Ed25519. A TV física e o Safari do destinatário precisam do primeiro teste no respetivo dispositivo.
+Esta versão não tem certificado Authenticode; o Windows pode mostrar um aviso de editor desconhecido. As atualizações são verificadas com assinatura Ed25519. A TV física e o Safari do destinatário precisam do primeiro teste no respetivo dispositivo.
 
 Referências: [clientes Jellyfin](https://jellyfin.org/downloads/clients/all/), [Quick Connect](https://jellyfin.org/docs/general/server/quick-connect/), [compatibilidade de formatos](https://jellyfin.org/docs/general/clients/codec-support/).
